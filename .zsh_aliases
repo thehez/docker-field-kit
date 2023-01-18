@@ -1,0 +1,16 @@
+### update aliases ###
+update-aliases() {
+    if [ -f $HOME/.oh-my-zsh/custom/aliases.zsh ]
+    then
+        rm $HOME/.oh-my-zsh/custom/aliases.zsh
+    fi
+    for i in $(find . -name "\.bash\_aliases" -type f); do cat $i >> $HOME/.oh-my-zsh/custom/aliases.zsh;done
+    source $HOME/.oh-my-zsh/custom/aliases.zsh
+}
+
+append-aliases() {
+    files=$(find . -name "\.bash\_aliases" -type f)
+    for i in $(find . -name "\.bash\_aliases" -type f); do cat $i >> $HOME/.oh-my-zsh/custom/aliases.zsh;done
+    source $HOME/.oh-my-zsh/custom/aliases.zsh
+}
+
