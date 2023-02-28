@@ -301,3 +301,6 @@
 [submodule "vulnerability-analysis/snotra"]
 	path = vulnerability-analysis/snotra
 	url = https://github.com/shaunography/snotra.git
+[submodule "vulnerability-analysis/ScoutSuite"]
+	path = vulnerability-analysis/ScoutSuite
+	url = https://github.com/nccgroup/ScoutSuite.git
